@@ -1,0 +1,16 @@
+Table pet {
+  pet_id int [pk, increment]
+  pet_name varchar(45)
+  pet_type_id int
+  gender varchar(45)
+}
+
+Table pet_type {
+  pet_type_id int [pk, increment]
+  pet_type_name varchar(45)
+}
+
+Ref: pet.pet_type_id > pet_type.pet_type_id
+
+Here is my prompts from the chat I used to do the entire project.
+https://chatgpt.com/share/6721286a-6b14-8010-922c-b5ce54179454

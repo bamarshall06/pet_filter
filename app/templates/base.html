@@ -2,28 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Flask Example</title>
+    <title>Pet Management System</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">FlaskApp</a>
+    <a class="navbar-brand" href="#">Pet Management System</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                <a class="nav-link" href="{{ url_for('pets.pet') }}">Pets</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('loan_amortization.loan') }}">Loan</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('about') }}">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('grades.grade') }}">Grades</a>
+                <a class="nav-link" href="{{ url_for('pet_types.pet_type') }}">Pet Types</a>
             </li>
         </ul>
     </div>
